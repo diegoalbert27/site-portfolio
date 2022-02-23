@@ -17,10 +17,39 @@ h2 {
   line-height: 28px;
 }
 
+h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+}
+
+h5 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .header {
   width: 100%;
   height: 100vh;
-  background : linear-gradient(0deg, rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)), url("../img/hero-image.jpg") center / cover;
+  background: linear-gradient(
+      0deg,
+      rgba(26, 26, 26, 0.6),
+      rgba(26, 26, 26, 0.6)
+    ),
+    url("../img/hero-image.jpg") center / cover;
 }
 
 .sidebar {
@@ -101,6 +130,7 @@ h2 {
 
 .navbar-container {
   z-index: 50;
+  visibility: hidden;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -109,6 +139,7 @@ h2 {
 }
 
 .navbar {
+  visibility: visible;
   position: fixed;
   width: 100%;
   padding: 10px;
@@ -169,6 +200,57 @@ h2 {
   line-height: 14px;
 }
 
-section {
+.section {
+  margin: 2em 1.5em;
   height: 1000px;
+}
+
+.description {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.description__title {
+  text-align: center;
+  padding: 0.5em;
+}
+
+.description__title h1 {
+  color: rgba(27, 27, 27, 0.9);
+}
+
+.description__title h5 {
+  color: rgba(27, 27, 27, 0.9);
+}
+
+.description__content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+
+.description__content p {
+  margin: 0.5em 0;
+}
+
+.description__btn {
+  margin: 2em 0;
+  display: flex;
+}
+
+.description__btn a {
+  padding: 25px;
+  color: #fafafa;
+  text-decoration: none;
+  background: #252440;
+  box-shadow: 4.6875px 4.6875px 9.375px #C4C4C4;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  
+  font-size: 18px;
+  line-height: 21px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
 }
